@@ -11,6 +11,7 @@ one loop: **type → autosave (debounced) → latexmk continuous build → Skim 
 | `init.vim` | The whole config, organized §1–§8: core settings, keymaps, plugins, theme, the VimTeX workflow, autocommands, Lua plugin setup, compatibility commands |
 | `after/plugin/luasnip.lua` | Every TeX snippet (single source of truth), including homework/solutions-specific ones |
 | `textemplate.tex` | Template auto-seeded into every new `.tex` buffer: LuaLaTeX preamble, shared notation macros, problem/solution machinery |
+| `textemplate.pdf` | Rendered preview of the template — exactly what a new `.tex` file looks like on first compile |
 | `.gitignore` | Keeps vim-plug's installed plugins and the installer out of the repo |
 
 ## Requirements
@@ -107,6 +108,8 @@ operators `\Span \rank \nullity \Ker \im \Hom \Aut \End \Gal \ord \tr \Var \Cov
 \argmin \argmax`, …) plus `problem`/`solution`/`answer`, `claim`/`idea`/
 `proofsketch`, and the quick `\exercise{n}` header. Muscle memory transfers
 across scratch files, lecture notes, homework, and solutions files.
+See **[textemplate.pdf](textemplate.pdf)** for exactly what a fresh file
+renders as.
 
 ## Companion coursework repository
 
