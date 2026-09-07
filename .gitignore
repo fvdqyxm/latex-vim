@@ -1,0 +1,15 @@
+# LaTeX build artifacts & editor noise
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.luac
+.netrwhist
+.DS_Store
+
+# vim-plug: installed plugins and the installer itself are not part of the config
+autoload/plugged/
+autoload/plug.vim
