@@ -169,6 +169,9 @@ ls.add_snippets("tex", {
 {}
 \end{{bmatrix}}
 ]], { i(1, "a & b \\\\ c & d") })),
+  -- spalign: semicolon-separated column vectors and matrices.
+  s("spa", fmt([[\spalignvector{{{}}}]], { i(1, "x_1; x_2; x_3") })),
+  s("spm", fmt([[\spalignmat{{{}}}]], { i(1, "a b; c d") })),
   matrix_snippet("m22", 2, 2, "a", false),
   matrix_snippet("m23", 2, 3, "a", false),
   matrix_snippet("m32", 3, 2, "a", false),

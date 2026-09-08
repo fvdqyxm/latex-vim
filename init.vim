@@ -381,6 +381,9 @@ augroup TexWorkflow
   " Fast lecture-note formatting: type the trigger in Insert mode.
   autocmd FileType tex inoremap <silent><buffer> ;b <C-g>u\textbf{}<Left>
   autocmd FileType tex inoremap <silent><buffer> ;i <C-g>u\emph{}<Left>
+  " spalign column vectors / matrices: type e.g. ;v then "1; 2; 3}" inside.
+  autocmd FileType tex inoremap <silent><buffer> ;v <C-g>u\spalignvector{}<Left>
+  autocmd FileType tex inoremap <silent><buffer> ;m <C-g>u\spalignmat{}<Left>
   autocmd FileType tex inoremap <silent><buffer> ;c <C-g>u<CR><CR>\noindent\textit{Claim.}<Space>
   autocmd FileType tex inoremap <silent><buffer> ;p <C-g>u<CR><CR>\noindent\textit{Proof.}<Space>
   autocmd FileType tex inoremap <silent><buffer> ;r <C-g>u<CR><CR>\noindent\textit{Remark.}<Space>
